@@ -1,5 +1,5 @@
 {% set name = "ovh" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ovh-{{ version }}.tar.gz
-  sha256: 210cf0bb48307cf34f38b40b08ef7d28be47bb6d3de18f9a7100455d51b31e15
+  sha256: 108f9b5a3b471193ce4a4589c7782f4bccbffe0ba03169774eb0472ac28ef679
 
 build:
   noarch: python
