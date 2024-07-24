@@ -1,5 +1,5 @@
 {% set name = "ovh" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ovh-{{ version }}.tar.gz
-  sha256: 61aaf1eb2992fd5af819ba5add08266e9ede2e002451e3a1606a4c367ddaa04f
+  sha256: d311f08ec17b62cc61216b3dacf03ee89f95a1da9036a595dac29fc9d798b827
 
 build:
   noarch: python
@@ -17,11 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools >=30.3.0
   run:
-    - python >=3.6
-    - requests >=2.11.0
+    - requests-oauthlib >=2.0.0
+    - python >=3.7
+    - requests >=2.31.0
 
 test:
   imports:
